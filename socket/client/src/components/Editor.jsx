@@ -56,7 +56,7 @@ const Editor = () => {
     useEffect(() => {
 
         if (initialRender.current[1] === 1) {
-            const socketServer = io('http://localhost:9000'); //server connect
+            const socketServer = io(''); //server connect
             console.log('setting up socket server....');
             setSocket(socketServer)
             initialRender.current[1]++;
